@@ -1,0 +1,16 @@
+header.header.shell-full
+  div.shell
+    div.brand
+      a
+        div
+          i.fa.fa-eercast(aria-hidden="true")
+        div
+          span SOFT
+          span APP
+    nav.nav
+      ul
+        li
+          a HOME
+        each val in ["ABOUT", "SERVICES", "BLOG", "CONTACTS"]
+          li
+            a= val

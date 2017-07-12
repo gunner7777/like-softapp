@@ -1,0 +1,22 @@
+mixin os(classes)
+  li
+    a
+      i(class= classes)
+
+section.shell-full
+  div.shell
+    div.innovate
+      div.innovate__img
+        figure
+          img(src="https://livedemo00.template-help.com/wt_59166/images/home-1-800x659.png")
+      div.innovate__caption
+        h1
+          span SOFT
+          span APP
+
+        h2 Innovative solutions
+        p Innovative solutions delivering a product, which includes tomorrow’s technology – already today!
+        ul
+          +os('fa fa-android')
+          +os('fa fa-apple')
+          +os('fa fa-windows')
