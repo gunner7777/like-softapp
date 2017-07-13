@@ -1,0 +1,22 @@
+mixin os(classes)
+  li
+    a
+      i(class= classes, aria-hidden="true")
+
+section.shell-full.section-color--blue
+  div.shell
+    div.innovate
+      div.innovate__img
+        figure
+          img(src="images/home-1-800x659.png")
+      div.innovate__caption
+        h1
+          span SOFT
+          span APP
+
+        h3 Innovative solutions
+        p Innovative solutions delivering a product, which includes tomorrow’s technology – already today!
+        ul
+          +os('fa fa-android')
+          +os('fa fa-apple')
+          +os('fa fa-windows')

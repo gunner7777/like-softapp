@@ -1,0 +1,15 @@
+header.shell-full.section-color--black
+  div.shell
+    div.header.flex-block
+      div.brand
+        a.brand__link(href="#")
+          i.fa.fa-eercast.brand__logo.text-color--blue(aria-hidden="true")
+          span.brand__title.text-bold SOFT
+          span.brand__title.text-color--blue APP
+      nav.nav
+        ul
+          li
+            a HOME
+          each val in ["ABOUT", "SERVICES", "BLOG", "CONTACTS"]
+            li
+              a= val
