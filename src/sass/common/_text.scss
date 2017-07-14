@@ -1,0 +1,23 @@
+.text {
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-color--blue {
+    color: $blue;
+  }
+}

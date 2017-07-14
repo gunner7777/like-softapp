@@ -18,6 +18,8 @@ var fontsInput = './src/fonts/*.*';
 var fontsOutput = './build/fonts';
 var vendorInput = './src/vendor/*.*';
 var vendorOutput = './build/vendor';
+var imgInput = './src/images/*.*';
+var imgOutput = './build/images';
 
 var sassOptions = {
   errLogToConsole: true,
@@ -76,8 +78,12 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest(vendorOutput))
 });
 
+gulp.task('images', function() {
+  return gulp.src(imgInput)
+    .pipe(gulp.dest(imgOutput))
+});
 
-gulp.task('watch', ['browserSync', 'sass', 'js', 'html', 'fonts', 'vendor'], function() {
+gulp.task('watch', ['browserSync', 'sass', 'js', 'html', 'fonts', 'vendor', 'images'], function() {
   gulp.watch(input, ['sass']);
   gulp.watch(pugInput, ['html']);
   gulp.watch(jsInput, ['js']);

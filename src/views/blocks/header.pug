@@ -1,16 +1,15 @@
-header.header.shell-full
+header.shell-full.section-color--black
   div.shell
-    div.brand
-      a
-        div
-          i.fa.fa-eercast(aria-hidden="true")
-        div
-          span SOFT
-          span APP
-    nav.nav
-      ul
-        li
-          a HOME
-        each val in ["ABOUT", "SERVICES", "BLOG", "CONTACTS"]
+    div.header.flex-block
+      div.brand
+        a.brand__link(href="#")
+          i.fa.fa-eercast.brand__logo.text-color--blue(aria-hidden="true")
+          span.brand__title.text-bold SOFT
+          span.brand__title.text-color--blue APP
+      nav.nav
+        ul
           li
-            a= val
+            a HOME
+          each val in ["ABOUT", "SERVICES", "BLOG", "CONTACTS"]
+            li
+              a= val

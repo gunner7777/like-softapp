@@ -1,0 +1,15 @@
+mixin ulItem(ref, classes)
+  li
+    a(href= ref)
+      i(class= classes, aria-hidden="true")
+
+footer.shell-full
+  div.shell
+    div
+      ul
+        +ulItem('#', 'fa fa-facebook')
+        +ulItem('#', 'fa fa-twitter')
+        +ulItem('#', 'fa fa-google-plus')
+        +ulItem('#', 'fa fa-linkedin')
+    div.copy
+      p Soft App © 2017 Privacy Policy

@@ -1,0 +1,17 @@
+mixin price(title, cost, class1, class2, class3, class4)
+  div
+    h5= title
+    p= cost
+    ul
+      li(class= class1) Customization
+      li(class= class2) Feedback System
+      li(class= class3) Personal Design
+      li(class= class4) 24/7 Support
+    a Learn more
+
+section.shell-full
+  div.shell
+    div.pricing
+      +price('start', '$ 19,99', 'include', 'include', 'disabled', 'disabled')
+      +price('NORMAL', '$ 29.99', 'include', 'include', 'include', 'disabled')
+      +price('PREMIUM', '$ 49,99', 'include', 'include', 'include', 'include')
