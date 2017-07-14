@@ -83,8 +83,10 @@ gulp.task('images', function() {
     .pipe(gulp.dest(imgOutput))
 });
 
-gulp.task('watch', ['browserSync', 'sass', 'js', 'html', 'fonts', 'vendor', 'images'], function() {
+gulp.task('static', ['fonts', 'vendor', 'images']);
+
+gulp.task('watch', ['browserSync', 'sass', 'js', 'html'], function() {
   gulp.watch(input, ['sass']);
-  gulp.watch(pugInput, ['html']);
+  gulp.watch('./src/views/**/*.pug', ['html']);
   gulp.watch(jsInput, ['js']);
 });
