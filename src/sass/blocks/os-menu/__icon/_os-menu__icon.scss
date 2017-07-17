@@ -1,0 +1,9 @@
+.os-menu__icon {
+  font-size: 3.5rem;
+  color: $dark_blue;
+  transition: color .3s ease-out;
+
+  &:hover {
+    color: $grey;
+  }
+}

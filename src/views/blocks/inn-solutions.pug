@@ -1,21 +1,21 @@
 mixin os(classes)
-  li
-    a
-      i(class= classes, aria-hidden="true")
+  li.os-menu__item.menu__item
+    a.os-menu__link
+      i.os-menu__icon(class= classes, aria-hidden="true")
 
 section.shell-full.section-color--blue
   div.shell
-    div.innovate
-      div.innovate__img
+    div.innovate.flex-block.flex-block--align-center
+      div.innovate__img.flex-block__item
         figure
           img(src="images/home-1-800x659.png")
-      div.innovate__caption
+      div.innovate__caption.flex-block__item
         h1
-          span SOFT
-          span APP
+          span.brand__title.text-bold.text-uppercase.text-size--xl SOFT
+          span.brand__title.text-color--grey.text-light.text-uppercase.text-size--xl APP
 
-        h3 Innovative solutions
-        p Innovative solutions delivering a product, which includes tomorrow’s technology – already today!
+        h3.section__title.text-uppercase.text-color--grey Innovative solutions
+        p.section__main-text Innovative solutions delivering a product, which includes tomorrow’s technology – already today!
         ul
           +os('fa fa-android')
           +os('fa fa-apple')

@@ -1,9 +1,23 @@
 .section {
+  &__title {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+
+  &__main-text {
+    font-size: 1.5rem;
+  }
+
   &-color--black {
     background-color: $black;
   }
-
   &-color--blue {
     background-color: $blue;
+  }
+  &-color--grey {
+    background-color: $grey;
+  }
+  &-color--light-grey {
+    background-color: $light_grey;
   }
 }

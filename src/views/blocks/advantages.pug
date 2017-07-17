@@ -5,10 +5,10 @@ mixin article(icon, title, text)
     h5= title
     p= text
 
-section.shell-full
+section.shell-full.section-color--grey
   div.shell
-    h3 Simple. Stunning. Smart.
-    p Welcome to the leading company on the market! Our success is driven by the highest quality customer service. We can meet the requirements even of the whimsical clients; there are no complex tasks for us! Thanks for your choice!
+    h3.section__title.text-uppercase.text-center Simple. Stunning. Smart.
+    p.section__main-text.text-center Welcome to the leading company on the market! Our success is driven by the highest quality customer service. We can meet the requirements even of the whimsical clients; there are no complex tasks for us! Thanks for your choice!
 
     div
       +article('fa fa-mobile', 'FULLY RESPONSIVE', 'Our apps have fully responsive interface and design that allow our users to run our products on any modern device or gadget, with all their functions available on any platform.')

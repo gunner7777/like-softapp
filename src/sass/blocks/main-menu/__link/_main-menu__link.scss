@@ -1,0 +1,30 @@
+.main-menu__link {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 10px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    color: $blue;
+    border-bottom: 1px solid;
+    max-width: 100%;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: all .4s ease;
+  }
+
+  &:hover:after,
+  &--active:after {
+    width: 35px;
+  }
+
+  &:hover,
+  &--active {
+    color: $blue;
+  }
+}
