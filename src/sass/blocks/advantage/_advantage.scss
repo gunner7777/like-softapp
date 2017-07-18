@@ -1,0 +1,13 @@
+.advantage {
+  margin: 0 30px;
+
+  &:hover {
+    .advantage__icon {
+      color: $blue;
+    }
+  }
+}
+
+@import '__title/advantage__title';
+@import '__text/advantage__text';
+@import '__icon/advantage__icon';
