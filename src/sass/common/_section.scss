@@ -1,3 +1,7 @@
+@mixin section-padding-up-down($up, $down) {
+  padding: $up 0 $down;
+}
+
 .section {
   &__title {
     font-size: 3rem;
@@ -8,16 +12,26 @@
     font-size: 1.5rem;
   }
 
-  &-color--black {
+  &-bgcolor--black {
     background-color: $black;
   }
-  &-color--blue {
+  &-bgcolor--blue {
     background-color: $blue;
   }
-  &-color--grey {
+  &-bgcolor--grey {
     background-color: $grey;
   }
-  &-color--light-grey {
+  &-bgcolor--light-grey {
     background-color: $light_grey;
+  }
+
+  &--padding-ud {
+    @include section-padding-up-down(65px, 65px);
+  }
+}
+
+@media all and (max-width: 991px) {
+  .section {
+    @include section-padding-up-down(60px, 60px); 
   }
 }
