@@ -9,7 +9,19 @@ header.shell-full.section-color--black
       nav.nav.header--height-inner
         ul
           li.main-menu__item.menu__item
-            a.main-menu__link.main-menu__link--active.text-uppercase HOME
+            a.main-menu__link.main-menu__link--active.text-uppercase(href="#") HOME
+            ul.submenu.submenu--level1.text-uppercase.section-color--black
+              each val in ['history', 'offers']
+                li.menu__item.submenu__item
+                  a.submenu__link(href="#")= val
+              li.menu__item.submenu__item
+                a.submenu__link(href="#") News
+
+                  i.fa.fa-chevron-right.text-right(aria-hidden="true")
+                  ul.submenu.submenu--next-level.text-uppercase.section-color--black
+                    each val in ['Fresh', 'New', '404 page']
+                      li.menu__item.submenu__item
+                        a.submenu__link(href="#")= val
           each val in ["ABOUT", "SERVICES", "BLOG", "CONTACTS"]
             li.main-menu__item.menu__item
-              a.main-menu__link.text-uppercase= val
+              a.main-menu__link.text-uppercase(href="#")= val

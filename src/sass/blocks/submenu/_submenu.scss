@@ -1,0 +1,17 @@
+.submenu {
+  position: absolute;
+  margin: 0 10px;
+  width: 240px;
+
+  &--level1 {
+    top: 250px;
+  }
+
+  &--next-level {
+    top: 60px;
+    left: 100%;
+  }
+}
+
+@import '__item/submenu__item';
+@import '__link/submenu__link';
