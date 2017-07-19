@@ -1,9 +1,9 @@
 mixin article(icon, title, text)
-  article.advantage.text-center
+  article.advantage.text-center.flex-block__col3.flex-block__col--margin-lg
     span
       i.advantage__icon(class= icon, aria-hidden="true")
     a.advantage__title.text-uppercase.text-color--blue(href='#')= title
-    p.advantage__text= text
+    p.advantage__text.text-size--sm= text
 
 section.shell-full.section-bgcolor--grey.section--padding-ud
   div.shell

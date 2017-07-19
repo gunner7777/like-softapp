@@ -1,3 +1,9 @@
+@mixin column($col, $margin: 15px) {
+  //flex: 1 1 calc(100% / #{$col} - 30px);
+  //flex: 1 1 calc(100% / #{$col} - #{$margin} * 2);
+  flex: 1 1 calc(100% * (#{$col} / #{$grid_columns}) - #{$margin} * 2);
+}
+
 .flex-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5,16 +11,68 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   
   &--align-center {
     align-items: center;
   }
-
-  &__item {
-    flex: 1 1 50%;
+  
+  &__col1,
+  &__col2,
+  &__col3,
+  &__col4 {
+    margin: 0 15px;
   }
+
+  &__col1 {
+    @include column(1);
+  }
+  &__col2 {
+    @include column(2);
+  }
+  &__col3 {
+    @include column(3);
+  }
+  &__col4 {
+    @include column(4);
+  }
+  &__col5 {
+    @include column(5);
+  }
+  &__col6 {
+    @include column(6);
+  }  
+  &__col7 {
+    @include column(7);
+  }
+  &__col8 {
+    @include column(8);
+  }
+  &__col9 {
+    @include column(9);
+  }
+  &__col10 {
+    @include column(10);
+  }  
+  &__col11 {
+    @include column(11);
+  }
+  &__col12 {
+    @include column(12);
+  } 
+
+  &__col--margin-lg {
+    margin: 0 30px;
+    @include column(3, '30px');
+  }
+}
+
+
+
+.no-gutters > [class*="flex-block__col"] {
+  margin: 0 0;
 }

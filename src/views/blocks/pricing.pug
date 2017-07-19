@@ -1,5 +1,5 @@
 mixin price(title, cost, class1, class2, class3, class4)
-  div
+  div.flex-block__col4
     h5= title
     p= cost
     ul
@@ -13,7 +13,7 @@ section.shell-full.section-bgcolor--light-grey.section--padding-ud
   div.shell
     h3.section__title.text-uppercase.text-color--grey.text-center Pricing Packages
 
-    div.pricing
+    div.pricing.flex-block
       +price('start', '$ 19,99', 'include', 'include', 'disabled', 'disabled')
       +price('NORMAL', '$ 29.99', 'include', 'include', 'include', 'disabled')
       +price('PREMIUM', '$ 49,99', 'include', 'include', 'include', 'include')

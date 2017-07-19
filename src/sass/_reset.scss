@@ -11,6 +11,10 @@ figure {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   &,
