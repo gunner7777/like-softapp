@@ -15,10 +15,15 @@
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  //align-items: center;
   
-  &--align-center {
-    align-items: center;
+  &--align {
+    &-center {
+      align-items: center;
+    }
+    &-top {
+      align-items: flex-start;
+    }
   }
   
   &__col1,
@@ -68,6 +73,13 @@
   &__col--margin-lg {
     margin: 0 30px;
     @include column(3, '30px');
+  }
+
+  &--order-first {
+    order: 1;
+  }
+  &--order-last {
+    order: 2;
   }
 }
 

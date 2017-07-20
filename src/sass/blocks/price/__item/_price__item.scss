@@ -1,0 +1,23 @@
+.price__item {
+  list-style-type: none;
+  position: relative;
+  margin: 20px 0;
+  padding-left: 30px;
+
+  &--enable:before,
+  &--disable:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    top: 2px; 
+  }
+
+  &--enable:before {
+    content: "\f058";
+    color: $blue;
+  }
+  &--disable:before {
+    content: "\f057";
+    color: $grey;
+  }
+}

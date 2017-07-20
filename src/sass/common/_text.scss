@@ -12,9 +12,15 @@
   &-size--xl {
     font-size: 3.5rem !important;
   }
-
+  &-size--lg {
+    font-size: 3rem !important;
+  }
+  &-size--md {
+    font-size: 1.3rem !important;
+  }
   &-size--sm {
     font-size: .9rem !important;
+    line-height: 1.5rem;
   }
 
   &-bold {
@@ -33,6 +39,9 @@
   }
   &-color--grey {
     color: $grey;
+  }
+  &-color--white {
+    color: $white;
   }
 
   &--valign-middle {

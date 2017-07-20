@@ -1,0 +1,54 @@
+@mixin list-hover($color) {
+  .list__title,
+  .list__icon {
+    color: $color;
+  }
+}
+
+.list {
+  margin: 40px 0 0;
+
+  &--hover-to-grey:hover {
+    @include list-hover($grey);
+  }
+  &--hover-to-white:hover {
+    @include list-hover($white);
+  }
+  &--hover-to-blue:hover {
+    @include list-hover($blue);
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 15px 0;
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease; 
+
+    &--hover-to-grey:hover {
+      color: $grey !important;
+    }
+    &--hover-to-white:hover {
+      color: $white !important;
+    }
+    &--hover-to-blue:hover {
+      color: $blue !important;
+    }
+  }
+
+  &__icon {
+    -webkit-transition: color .3s ease;
+    -o-transition: color .3s ease;
+    transition: color .3s ease;
+    margin: 20px 0 0;
+
+    &--normal {
+      font-size: 3rem;
+    }
+    &--big {
+      font-size: 8rem;
+    }
+  }
+}

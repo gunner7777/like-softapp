@@ -1,0 +1,8 @@
+.price {
+  background-color: $white;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+@import '__cost/price__cost';
+@import '__menu/price__menu';
+@import '__item/price__item';

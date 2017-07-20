@@ -1,9 +1,10 @@
 mixin article(icon, title, text)
-  article.advantage.text-center.flex-block__col3.flex-block__col--margin-lg
+  article.list.text-center.flex-block__col3.flex-block__col--margin-lg.list--hover-to-blue
     span
-      i.advantage__icon(class= icon, aria-hidden="true")
-    a.advantage__title.text-uppercase.text-color--blue(href='#')= title
-    p.advantage__text.text-size--sm= text
+      i.list__icon.list__icon--big(class= icon, aria-hidden="true")
+    h5
+      a.list__title.list__title--hover-to-white.text-uppercase.text-color--blue(href='#')= title
+    p.list__text.text-size--sm= text
 
 section.shell-full.section-bgcolor--grey.section--padding-ud
   div.shell

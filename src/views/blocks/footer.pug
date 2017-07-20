@@ -1,15 +1,15 @@
 mixin ulItem(ref, classes)
-  li
-    a(href= ref)
-      i(class= classes, aria-hidden="true")
+  li.menu__item.social-menu__item
+    a.social-menu__link.text-color--blue(href= ref)
+      i.text-size--md(class= classes, aria-hidden="true")
 
 footer.shell-full.section-bgcolor--grey.section--padding-ud
   div.shell
-    div
-      ul
+    div.text-center
+      ul.social-menu
         +ulItem('#', 'fa fa-facebook')
         +ulItem('#', 'fa fa-twitter')
         +ulItem('#', 'fa fa-google-plus')
         +ulItem('#', 'fa fa-linkedin')
-    div.copy
+    div.copy.text-center
       p Soft App © 2017 Privacy Policy
