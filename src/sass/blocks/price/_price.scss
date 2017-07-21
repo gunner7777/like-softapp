@@ -1,7 +1,14 @@
 .price {
+  position: relative;
   background-color: $white;
-  padding: 10px 0;
+  padding: 30px 0 20px;
   margin-top: 40px;
+
+  &:hover {
+    .price__cost {
+      background-color: $dark_blue;
+    }
+  }
 }
 @import '__cost/price__cost';
 @import '__menu/price__menu';

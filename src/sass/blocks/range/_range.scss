@@ -1,0 +1,7 @@
+.range {
+  position: relative;
+  padding: 0 50px;
+}
+@import '__stroke/range__stroke';
+@import '__trail/range__trail';
+@import '__percent/range__percent';
