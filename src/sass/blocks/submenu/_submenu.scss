@@ -2,9 +2,13 @@
   position: absolute;
   margin: 0 10px;
   width: 240px;
+  background-color: $black;
+  transition: top .3s ease;
 
   &--level1 {
-    top: 250px;
+    top: 296px;
+    left: -50%;
+    transform: translate(20%, 0);
   }
 
   &--next-level {
