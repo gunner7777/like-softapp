@@ -6,7 +6,7 @@
 }
 
 .list {
-  margin: 40px 0 0;
+  margin: 40px;
 
   &--hover-to-grey:hover {
     @include list-hover($grey);
