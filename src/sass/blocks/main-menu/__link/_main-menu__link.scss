@@ -14,7 +14,11 @@
     height: 0;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
   }
 
@@ -26,11 +30,5 @@
   &:hover,
   &--active {
     color: $blue;
-  }
-  
-  &:hover {
-    .submenu {
-      top: 96px;
-    }
   }
 }

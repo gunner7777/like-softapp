@@ -9,13 +9,13 @@ header.shell-full.section-bgcolor--black
       nav.nav.header--height-inner
         ul
           li.main-menu__item.menu__item
-            a.main-menu__link.main-menu__link--active.text-uppercase(href="#") HOME
+            a.main-menu__link.main-menu__link--active.text-uppercase.parent(href="#") HOME
             ul.submenu.submenu--level1.text-uppercase.section-color--black
               each val in ['history', 'offers']
                 li.menu__item.submenu__item
                   a.submenu__link(href="#")= val
               li.menu__item.submenu__item
-                a.submenu__link(href="#") News
+                a.submenu__link.parent(href="#") News
 
                   i.fa.fa-chevron-right.text-right(aria-hidden="true")
                   ul.submenu.submenu--next-level.text-uppercase.section-color--black
