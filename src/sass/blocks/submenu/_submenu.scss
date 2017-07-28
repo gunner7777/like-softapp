@@ -9,19 +9,20 @@
   visibility: hidden;
 
   &--level1 {
-    top: 296px;
+    top: 120px;
     left: -50%;
     -webkit-transform: translate(20%, 0);
         -ms-transform: translate(20%, 0);
             transform: translate(20%, 0);
   }
 
-  &--next-level {
+  &--next-level
+   {
     top: 60px;
     left: 100%;
   }
 
-  &--open {
+  &--show {
     top: 96px;
     visibility: visible;
   }

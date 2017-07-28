@@ -31,4 +31,11 @@
   &--active {
     color: $blue;
   }
+
+  /*&:hover {
+    ~ .submenu {
+      top: 96px;
+      visibility: visible;
+    }
+  }*/
 }
