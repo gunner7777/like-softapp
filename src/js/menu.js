@@ -2,23 +2,60 @@ document.addEventListener('DOMContentLoaded', function() {
   var mainMenu = document.querySelector('.main-menu');
 
   mainMenu.addEventListener('mouseover', function(e) {
-    
     if(e.target.classList.contains('parent')) {
       e.target.nextElementSibling.classList.add('submenu--show');
     }
   });
 
   mainMenu.addEventListener('mouseout', function(e) {
-    console.log(e.relatedTarget);
     setTimeout(function() {
-      if(e.relatedTarget.classList.contains('submenu--show')) {
-        console.log("dfdf");
-      } else {
-        e.target.classList.remove('submenu--show');
-      }
+    if(!e.relatedTarget.parentNode.classList.contains('submenu') && !e.relatedTarget.parentNode.classList.contains('submenu__item')) {
+      console.log(e.relatedTarget.tagName);
+      
+        if(e.target.classList.contains('parent')) {
+          //e.target.nextElementSibling.classList.remove('submenu--show');
+        }
+      
+    }
     }, 800);
   });
+
+
+  /*var subMenu = document.querySelector('.submenu');
+
+  subMenu.addEventListener('mouseover', function(e) {
+    if(e.target.classList.contains('parent')) {
+      e.target.nextElementSibling.classList.add('submenu--show');
+    }
+  });  */
 });
+
+
+
+/*document.addEventListener('DOMContentLoaded', function() {
+  var mainMenu = document.querySelector('.main-menu');
+
+  mainMenu.addEventListener('mouseover', function(e) {
+    if(e.target.classList.contains('parent')) {
+      e.target.nextElementSibling.classList.add('submenu--show');
+    }
+  });
+
+  mainMenu.addEventListener('mouseout', function(e) {
+    setTimeout(function() {
+      if(!e.relatedTarget.classList.contains('parent')) {
+        if(!e.relatedTarget.classList.contains('submenu--show')) {
+          e.target.nextElementSibling.classList.remove('submenu--show');
+        }
+      }
+      /*if(!e.relatedTarget.classList.contains('submenu--show')) {
+
+        //удалить того чего нет невозможно
+        e.relatedTarget.classList.remove('submenu--show');
+      }*/
+    /*}, 800);
+  });
+});*/
 
 
 

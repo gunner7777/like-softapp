@@ -64,7 +64,7 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
   return gulp.src(jsInput)
-    .pipe(concat('hamintec.js'))
+    .pipe(concat('script.js'))
     .pipe(gulp.dest(jsOutput))
 });
 
