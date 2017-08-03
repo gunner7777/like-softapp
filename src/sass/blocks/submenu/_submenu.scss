@@ -6,6 +6,7 @@
   -webkit-transition: top .3s ease;
   -o-transition: top .3s ease;
   transition: top .3s ease;
+  display: none;
   visibility: hidden;
 
   &--level1 {

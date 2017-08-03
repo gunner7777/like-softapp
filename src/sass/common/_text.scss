@@ -1,3 +1,10 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
+
+body {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
 .text {
   &-right {
     text-align: right;

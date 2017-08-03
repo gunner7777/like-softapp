@@ -32,7 +32,15 @@
   }
 }
 
-@media all and (max-width: 991px) {
+@include mq(1199px) {
+  .section {
+    &__title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@include mq(991px) {
   .section {
     @include section-padding-up-down(60px, 60px); 
   }
