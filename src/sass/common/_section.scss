@@ -43,5 +43,14 @@
 @include mq(991px) {
   .section {
     @include section-padding-up-down(60px, 60px); 
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__main-text {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
   }
 }
