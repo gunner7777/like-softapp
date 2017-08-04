@@ -15,3 +15,10 @@
     width: 90%;
   }
 }
+
+@include mq(767px) {
+  .shell {
+    width: 60%;
+    text-align: center;
+  }
+}

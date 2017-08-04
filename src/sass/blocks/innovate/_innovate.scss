@@ -1,2 +1,12 @@
+@include mq(767px) {
+  .innovate__caption {
+    order: 1;
+  }
+  .innovate__img {
+    order: 2;
+  }
+}
+
 @import '__title/innovate__title';
+@import '__caption/innovate__caption';
 @import '__span/innovate__span';
