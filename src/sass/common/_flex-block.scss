@@ -105,6 +105,12 @@
   margin: 0 0;
 }
 
+@include mq(991px) {
+  .flex-block__col {
+    @include column(5);
+  }
+}
+
 @include mq(767px) {
   .flex-block__col {
     @include column(12);

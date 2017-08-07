@@ -1,10 +1,10 @@
 mixin whychoose(title, text, icon, align, titleModColor, textModColor, titleHoverColor, listHoverColor, order1, order2)
   article.list.flex-block.flex-block--align-top(class= align + " " + listHoverColor)
-    div.flex-block__col.flex-block__col10(class= order1)
+    div.whychoose__element.flex-block__col.flex-block__col10(class= order1)
       h5
         a.list__title.text-uppercase(href='#', class= titleModColor + " " + titleHoverColor)= title
       p.list__text.text-size--sm(class= textModColor)= text
-    div.flex-block__col.flex-block__col2.text-center(class= order2)
+    div.whychoose__element.flex-block__col.flex-block__col2.text-center(class= order2)
       span
         i.list__icon.list__icon--normal(class= icon + " " + titleModColor, aria-hidden="true")
 
@@ -13,16 +13,16 @@ section.shell-full.section--padding-ud
     h3.section__title.text-uppercase.text-color--grey.text-center Why choose us
     p.section__main-text.text-color--grey.text-center We are focused on providing integrated solutions and services to customers around the world. Putting our clients’ interests first, we work hard to exceed your expectations.
 
-    div.flex-block
-      div.flex-block__col.flex-block__col4
+    div.whychoose.flex-block
+      div.whychoose__block.flex-block__col.flex-block__col4
         +whychoose('Free', 'All our apps are distributed online for free, so you don’t have to pay anything to anyone else to use them.', 'fa fa-unlock-alt', 'text-right', 'text-color--blue', 'text-color--grey', 'list__title--hover-to-blue', 'list--hover-to-grey', 'flex-block--order-first', 'flex-block--order-last')
         +whychoose('GET SMARTER', 'We design our apps with the end user in mind. They also perfectly fit for increasing your technical awareness.', 'fa fa-paper-plane-o', 'text-right', 'text-color--blue', 'text-color--grey', 'list__title--hover-to-blue', 'list--hover-to-grey', 'flex-block--order-first', 'flex-block--order-last')
         +whychoose('CUSTOMER SERVICE', 'Have a question regarding our apps? Contact our customer service department to have it answered today!', 'fa fa-envelope-o', 'text-right', 'text-color--blue', 'text-color--grey', 'list__title--hover-to-blue', 'list--hover-to-grey', 'flex-block--order-first', 'flex-block--order-last')
-      div.flex-block__col.flex-block__col4.text-center
+      div.whychoose__block.flex-block__col.flex-block__col4.text-center
         figure
           img(src="images/home-2-568x642.png")
 
-      div.flex-block__col.flex-block__col4
+      div.whychoose__block.flex-block__col.flex-block__col4
         +whychoose('GREAT usability', 'We pay a lot of attention to providing a high level of usability to make sure your goals are met by using our products.', 'fa fa-thumbs-o-up', 'text-left', 'text-color--blue', 'text-color--grey', 'list__title--hover-to-blue', 'list--hover-to-grey', 'flex-block--order-last', 'flex-block--order-first')
         +whychoose('SOCIAL', 'Social apps play a great role for many users nowadays, that’s why we are also oriented to this type of applications.', 'fa fa-user-o', 'text-left', 'text-color--blue', 'text-color--grey', 'list__title--hover-to-blue', 'list--hover-to-grey', 'flex-block--order-last', 'flex-block--order-first')
         +whychoose('AMAZING STYLE', 'Want your smartphone to look stylish? There isn’t anything better than apps developed and designed by our company!', 'fa fa-bolt', 'text-left', 'text-color--blue', 'text-color--grey', 'list__title--hover-to-blue', 'list--hover-to-grey', 'flex-block--order-last', 'flex-block--order-first')
