@@ -5,16 +5,16 @@
 }
 
 .shell {
-  width: 80%;
+  width: 90%;
   /*width: 80vw;*/
   margin: 0 auto;
 }
 
-@include mq(991px) {
+/*@include mq(991px) {
   .shell {
     width: 90%;
   }
-}
+}*/
 
 @include mq(767px) {
   .shell {
