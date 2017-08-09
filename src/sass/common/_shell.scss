@@ -22,3 +22,10 @@
     text-align: center;
   }
 }
+
+@include mq(480px) {
+  .shell {
+    width: 95%;
+    text-align: center;
+  }
+}

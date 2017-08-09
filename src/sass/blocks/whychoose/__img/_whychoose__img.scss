@@ -1,0 +1,12 @@
+@include mq(991px) {
+  .whychoose__img {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+}
+
+@include mq(767px) {
+  .whychoose__img {
+    max-width: 100%;
+  }
+}

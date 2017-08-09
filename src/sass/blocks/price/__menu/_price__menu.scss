@@ -2,3 +2,48 @@
   width: 45%;
   margin: 30px auto;
 }
+
+@include mq(1598px) {
+  .price__menu {
+    width: 60%;
+    padding-left: 30px;
+  }
+}
+
+@include mq(1400px) {
+  .price__menu {
+    padding-left: 10px;
+  }
+}
+
+@include mq(1279px) {
+  .price__menu {
+    width: 70%;
+  }
+}
+
+@include mq(1111px) {
+  .price__menu {
+    width: 80%;
+    padding-left: 0;
+  }
+}
+
+@include mq(767px) {
+  .price__menu {
+    width: 60%;
+    padding-left: 20px;
+  }
+}
+
+@include mq(667px) {
+  .price__menu {
+    width: 70%;
+  }
+}
+
+@include mq(579px) {
+  .price__menu {
+    width: 80%;
+  }
+}
