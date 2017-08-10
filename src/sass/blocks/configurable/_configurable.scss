@@ -1,5 +1,10 @@
-.configurable {
-  &__button {
-    margin-top: 25px;
-  }
+@include mq(991px) {
+  .configurable {
+    &__button {
+      margin-top: 25px;
+      justify-self: center;
+    }
+  }  
 }
+
+@import '__block/configurable__block';

@@ -1,6 +1,11 @@
 .price__cost {
   background-color: $blue;
   padding: 15px 0;
-
   transition: background-color .3s ease;
+}
+
+@include mq(480px) {
+  .price__cost {
+    font-size: 2rem;
+  }
 }

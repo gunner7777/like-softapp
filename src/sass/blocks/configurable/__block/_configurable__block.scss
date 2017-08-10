@@ -1,0 +1,6 @@
+@include mq(991px) {
+  .configurable__block {
+    @include column(12);
+    text-align: center;
+  }
+}
