@@ -1,12 +1,22 @@
+mixin features(title, text, icon, align, titleModColor, textModColor, titleHoverColor, listHoverColor, order1, order2)
+  article.features__feature.list.flex-block.flex-block--align-top(class= align + " " + listHoverColor)
+    div.features__element.flex-block__col.flex-block__col10(class= order1)
+      h5
+        a.list__title.text-uppercase(href='#', class= titleModColor + " " + titleHoverColor)= title
+      p.list__text.text-size--sm(class= textModColor)= text
+    div.features__element.flex-block__col.flex-block__col2.text-center(class= order2)
+      span
+        i.list__icon.list__icon--normal(class= icon + " " + titleModColor, aria-hidden="true")
+
 section.shell-full.section-bgcolor--blue.section--padding-ud
   div.shell
     div.features.flex-block
-      div.flex-block__col.flex-block__col6
+      div.features__block.flex-block__col.flex-block__col6
         figure
-          img(src="images/home-3-1123x732.png")
-      div.flex-block__col.flex-block__col6
+          img.features__img(src="images/home-3-1123x732.png")
+      div.features__block.flex-block__col.flex-block__col6
         h3.section__title.text-uppercase.text-center Amazing Features
         p.section__main-text.text-center Not all modern apps are made equal but our products have a lot of features that you may find useful.
-        div
-          +whychoose('Beautiful, modern design', 'Our apps offer our customers responsive and functional design that looks beautiful and modern in comparison with many other products on the market of free apps.', 'fa fa-pie-chart', 'text-left', 'text-color--grey', 'text-color--white', 'list__title--hover-to-grey', '', 'flex-block--order-last', 'flex-block--order-first')
-          +whychoose('Easy to set up', 'If you are looking for a specific app with a feature of extensive customization, our apps can become your perfect choice. From changing the look of the interface to installing new modules, we got you covered.', 'fa fa-cog', 'text-left', 'text-color--grey', 'text-color--white', 'list__title--hover-to-grey', '', 'flex-block--order-last', 'flex-block--order-first')
+        div.flex-block
+          +features('Beautiful, modern design', 'Our apps offer our customers responsive and functional design that looks beautiful and modern in comparison with many other products on the market of free apps.', 'fa fa-pie-chart', 'text-left', 'text-color--grey', 'text-color--white', 'list__title--hover-to-grey', '', 'flex-block--order-last', 'flex-block--order-first')
+          +features('Easy to set up', 'If you are looking for a specific app with a feature of extensive customization, our apps can become your perfect choice. From changing the look of the interface to installing new modules, we got you covered.', 'fa fa-cog', 'text-left', 'text-color--grey', 'text-color--white', 'list__title--hover-to-grey', '', 'flex-block--order-last', 'flex-block--order-first')

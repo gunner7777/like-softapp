@@ -2,6 +2,19 @@
   position: relative;
   padding: 0 43px;
 }
+
+@include mq(1320px) {
+  .range {
+    padding: 0 20px;
+  }
+}
+
+@include mq(991px) {
+  .range {
+    padding: 0 43px;
+  }
+}
+
 @import '__stroke/range__stroke';
 @import '__trail/range__trail';
 @import '__percent/range__percent';

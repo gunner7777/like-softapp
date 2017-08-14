@@ -21,9 +21,10 @@
 
 @include mq(300px) {
   .button {
+    padding: 14px 25px 10px 25px;
+
     &--primary {
       font-size: .9rem;
     }
-  }
-  
+  } 
 }
