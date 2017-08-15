@@ -2,6 +2,12 @@
   margin: 0 25px;
 }
 
+@include mq(620px) {
+  .social-menu__item {
+    margin: 0 14px;
+  }
+}
+
 @include mq(431px) {
   .social-menu__item {
     margin: 0 15px;

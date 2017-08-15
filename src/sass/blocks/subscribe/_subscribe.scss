@@ -1,0 +1,16 @@
+.subscribe {
+  &__button {
+    max-width: 181px;
+  }
+  &__input {
+    max-width: 400px;
+  }
+}
+
+@include mq(767px) {
+  .subscribe {
+    &__input {
+      margin-bottom: 20px;
+    }
+  } 
+}

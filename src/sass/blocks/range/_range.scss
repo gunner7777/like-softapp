@@ -1,20 +1,22 @@
 .range {
   position: relative;
-  padding: 0 43px;
-}
+  max-width: 300px;
 
-@include mq(1320px) {
-  .range {
-    padding: 0 20px;
-  }
 }
 
 @include mq(991px) {
   .range {
-    padding: 0 43px;
+    padding: 0 55px;
+  }
+}
+
+@include mq(767px) {
+  .range {
+    padding: 0 20%;
   }
 }
 
 @import '__stroke/range__stroke';
 @import '__trail/range__trail';
 @import '__percent/range__percent';
+@import '__chart/range__chart';
