@@ -1,10 +1,24 @@
-$(document).ready(function() {
-  $('.parent').hover(function() {
-    $(this).siblings('.submenu').addClass('submenu--show');
-  }, function() {
-    $(this).siblings('.submenu').removeClass('submenu--show');
+document.addEventListener('DOMContentLoaded', function() {
+  var mainMenu = document.querySelector('.main-menu');
+  mainMenu.addEventListener('mouseover', function(e) {
+    if(e.target.classList.contains('parent')) {
+      e.target.classList.add('active');
+      e.target.querySelector('.submenu').classList.add('submenu--show');
+    }
+  });
+
+  mainMenu.addEventListener('mouseout', function(e) {
+    if(e.target.classList.contains('.active') && (!e.target.contains(e.relatedTarget))) {
+      e.target.querySelector('.submenu').classList.remove('submenu--show');
+    }
   });
 });
+
+
+
+
+
+
 
 
 
