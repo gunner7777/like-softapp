@@ -17,18 +17,33 @@ $(document).ready(function() {
     }
   });
 
+<<<<<<< HEAD
   /*mainMenu.addEventListener('mouseout', function(e) {
     setTimeout(function() {
     if(!e.relatedTarget.parentNode.classList.contains('submenu') && !e.relatedTarget.parentNode.classList.contains('submenu__item')) {
       console.log(e.relatedTarget.tagName);
+=======
+  setTimeout(function() {
+    mainMenu.addEventListener('mouseleave', function(e) {
+      console.log(e.relatedTarget);
+>>>>>>> b6d25106b64f65e7170e8bcc3599ea4d89fde45c
       
-        if(e.target.classList.contains('parent')) {
-          //e.target.nextElementSibling.classList.remove('submenu--show');
-        }
+        //console.log(e.relatedTarget);
+      if(!e.relatedTarget.parentNode.classList.contains('submenu') && !e.relatedTarget.parentNode.classList.contains('submenu__item')) {
+        //console.log(e.relatedTarget);
+        
+          if(e.target.classList.contains('parent')) {
+            e.target.nextElementSibling.classList.remove('submenu--show');
+          }
+        
+      }
       
-    }
-    }, 800);
-  });*/
+
+    });
+    }, 600);
+
+   
+
 
 
   /*var subMenu = document.querySelector('.submenu');
