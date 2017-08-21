@@ -8,7 +8,6 @@
   transition: top .3s ease;
   display: none;
   visibility: hidden;
-  border: 1px solid #fff;
 
   &--level1 {
     top: 120px;
@@ -26,7 +25,6 @@
 
   &--show {
     top: 96px;
-
     display: block;
     visibility: visible;
   }
