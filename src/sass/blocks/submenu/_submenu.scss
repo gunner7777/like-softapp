@@ -1,17 +1,19 @@
 .submenu {
   position: absolute;
-  margin: 0 10px;
+  //margin: 0 10px;
   width: 240px;
-  background-color: $black;
-  -webkit-transition: top .3s ease;
-  -o-transition: top .3s ease;
-  transition: top .3s ease;
+  //background-color: $black;
+  -webkit-transition: padding .3s ease;
+  -o-transition: padding .3s ease;
+  transition: padding .3s ease;
   display: none;
   visibility: hidden;
-  border: 1px solid #fff;
+  outline: 1px solid red;
+  //padding: 80px 10px 0;
+  padding: 80px 0 0;
 
   &--level1 {
-    top: 120px;
+    //top: 120px;
     left: -50%;
     -webkit-transform: translate(20%, 0);
         -ms-transform: translate(20%, 0);
@@ -20,13 +22,14 @@
 
   &--next-level
    {
-    top: 60px;
+    top: 110px;
+    padding-top: 0 !important;
     left: 100%;
   }
 
   &--show {
-    /*top: 96px;*/
-    top: 60px;
+    //padding: 30px 10px 0;
+    padding: 30px 0 0;
     display: block;
     visibility: visible;
   }
