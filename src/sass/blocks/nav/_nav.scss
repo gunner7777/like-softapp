@@ -1,0 +1,14 @@
+@include mq(991px) {
+  .nav {
+    position: relative;
+
+    &__toggle {
+      &:after {
+        content: "\f0c9";
+        font-family: FontAwesome;
+        color: $white;
+        position: absolute;
+      }
+    }
+  }
+}
