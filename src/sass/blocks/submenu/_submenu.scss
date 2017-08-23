@@ -1,19 +1,18 @@
 .submenu {
   position: absolute;
-  //margin: 0 10px;
+  /*margin: 0 10px;*/
   width: 240px;
-  //background-color: $black;
+  /*background-color: $black;*/
   -webkit-transition: padding .3s ease;
   -o-transition: padding .3s ease;
   transition: padding .3s ease;
   display: none;
   visibility: hidden;
-  outline: 1px solid red;
-  //padding: 80px 10px 0;
+  /*padding: 80px 10px 0;*/
   padding: 80px 0 0;
 
   &--level1 {
-    //top: 120px;
+    /*top: 120px;*/
     left: -50%;
     -webkit-transform: translate(20%, 0);
         -ms-transform: translate(20%, 0);
@@ -28,7 +27,7 @@
   }
 
   &--show {
-    //padding: 30px 10px 0;
+    /*padding: 30px 10px 0;*/
     padding: 30px 0 0;
     display: block;
     visibility: visible;

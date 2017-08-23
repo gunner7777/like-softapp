@@ -1,6 +1,7 @@
 @include mq(991px) {
   .nav {
     position: absolute;
+    left: 0;
     
     &__mobile {
       position: absolute;
@@ -15,11 +16,17 @@
 
     &__toggle {
       top: 50%;
-      transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%);
       left: 0;
       right: 0;
       margin: auto;
+      -webkit-transition: -webkit-transform .3s ease;
+      transition: -webkit-transform .3s ease;
+      -o-transition: transform .3s ease;
       transition: transform .3s ease;
+      transition: transform .3s ease, -webkit-transform .3s ease;
       
       &,
       &:before,
@@ -34,7 +41,7 @@
       &:after {
         content: "";
         left: 0;
-        //transition: top .3s ease;
+        /*transition: top .3s ease;*/
       }
       &:before {
         top: -8px;
@@ -52,9 +59,11 @@
     }
 
     &--open {
-      transform: rotate(-180deg);
-      //transition: transform .3s ease;
-      //transition: top .6s ease;
+      -webkit-transform: rotate(-180deg);
+          -ms-transform: rotate(-180deg);
+              transform: rotate(-180deg);
+      /*transition: transform .3s ease;*/
+      /*transition: top .6s ease;*/
       &:before,
       &:after {
         width: 15px;
@@ -63,14 +72,23 @@
       }
 
       &:before {
-        transform-origin: 100% 0;
-        transform: rotate(-45deg);
+        -webkit-transform-origin: 100% 0;
+            -ms-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
         left: 6px;
       }
       &:after {
-        transform-origin: 100% 0;
-        transform: rotate(45deg);
-        left: 10px;
+        -webkit-transform-origin: 100% 0;
+            -ms-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        left: 9px;
+        top: 1px;
       }
 
     }
