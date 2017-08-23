@@ -39,3 +39,17 @@
     }
   }*/
 }
+
+.active {
+  & > .main-menu__link {
+    &:hover:after,
+    &:after {
+      width: 35px;
+    }
+
+    &:hover,
+    & {
+      color: $blue;
+    }
+  }
+}
