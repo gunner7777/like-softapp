@@ -1,14 +1,78 @@
 @include mq(991px) {
   .nav {
-    position: relative;
+    position: absolute;
+    
+    &__mobile {
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      left: 0;
+      top: 6px;
+      z-index: 10;
+      background-color: transparent;
+    }
 
     &__toggle {
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+      right: 0;
+      margin: auto;
+      transition: transform .3s ease;
+      
+      &,
+      &:before,
       &:after {
+        width: 24px;
+        height: 4px;
+        background-color: $white;
+        border-radius: 4px;
+        position: absolute;
+      }
+      &:before,
+      &:after {
+        content: "";
+        left: 0;
+        transition: top .9s ease;
+      }
+      &:before {
+        top: -8px;
+      }
+      &:after {
+        bottom: -8px;
+      }
+
+      /*&:after {
         content: "\f0c9";
         font-family: FontAwesome;
         color: $white;
         position: absolute;
+      }*/
+    }
+
+    &--open {
+      transform: rotate(-180deg);
+      //transition: transform .3s ease;
+      //transition: top .6s ease;
+      &:before,
+      &:after {
+        width: 15px;
+        top: 0;
+        
       }
+
+      &:before {
+        //transform-origin: 100% 0;
+        transform: rotate(-135deg);
+        left: 6px;
+      }
+      &:after {
+        //transform-origin: 100% 0;
+        transform: rotate(0deg);
+        left: 10px;
+      }
+
     }
   }
 }

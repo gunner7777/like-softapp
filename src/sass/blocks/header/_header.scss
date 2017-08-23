@@ -1,7 +1,26 @@
 .header {
   padding: 30px 15px;
+  justify-content: space-between;
 
   &--height-inner {
     line-height: 4rem;
+  }
+}
+
+@include mq(991px) {
+  .header {
+    padding: 15px;
+
+    &__brand {
+      order: 2;
+    }
+
+    &__nav {
+      order: 1;
+    }
+
+    &--height-inner {
+      line-height: 0;
+    }
   }
 }

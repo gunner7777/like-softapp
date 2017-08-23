@@ -2,5 +2,12 @@
   outline: 1px solid green;
 }
 
+
+@include mq(991px) {
+  .main-menu {
+    display: none;
+  }
+}
+
 @import '__item/main-menu__item';
 @import '__link/main-menu__link';

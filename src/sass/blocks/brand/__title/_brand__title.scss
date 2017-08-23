@@ -1,3 +1,9 @@
 .brand__title {
   font-size: 2.4rem;
 }
+
+@include mq(991px) {
+  .brand__title {
+    font-size: 2.1rem;
+  }
+}

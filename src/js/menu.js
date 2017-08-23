@@ -25,4 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       }
   });
+
+  document.querySelector('.nav__mobile').addEventListener('click', function(e) {
+    if(e.target.classList.contains('nav__toggle') || (e.target.classList.contains('nav__mobile'))) {
+      console.log(e.target);
+      document.querySelector('.nav__toggle').classList.toggle('nav--open');
+    }
+  });
 });
+
+
