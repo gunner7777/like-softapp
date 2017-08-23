@@ -34,7 +34,7 @@
       &:after {
         content: "";
         left: 0;
-        transition: top .9s ease;
+        //transition: top .3s ease;
       }
       &:before {
         top: -8px;
@@ -63,13 +63,13 @@
       }
 
       &:before {
-        //transform-origin: 100% 0;
-        transform: rotate(-135deg);
+        transform-origin: 100% 0;
+        transform: rotate(-45deg);
         left: 6px;
       }
       &:after {
-        //transform-origin: 100% 0;
-        transform: rotate(0deg);
+        transform-origin: 100% 0;
+        transform: rotate(45deg);
         left: 10px;
       }
 
