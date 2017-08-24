@@ -1,0 +1,11 @@
+@include mq(991px) {
+  .menu__toggle {
+    position: absolute;
+    right: 5px;
+    transition: transform .3s ease;
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+}

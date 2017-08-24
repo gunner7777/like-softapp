@@ -17,7 +17,8 @@
 
 
     &--show {
-      display: block;
+      display: list-item;
+      border-right: 1px solid $black;
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
               transform: translateX(0);
