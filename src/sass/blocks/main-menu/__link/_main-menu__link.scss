@@ -56,7 +56,7 @@
 
 @media all and (min-width: 992px) {
   .main-menu__link {
-    & > i {
+    & > .menu__toggle {
       display: none;
     }
   }
@@ -66,6 +66,7 @@
   .main-menu__link {
     display: block;
     padding: 10px 30px 10px 15px;
+    text-align: left;
 
     &:hover {
       background-color: $blue;
@@ -75,9 +76,6 @@
     &:after {
       content: none;
     }
-
-
-
   }
 
   .active {

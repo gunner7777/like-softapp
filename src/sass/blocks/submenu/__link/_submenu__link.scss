@@ -14,3 +14,26 @@
     color: $blue;
   }
 }
+
+
+@include mq(991px) {
+  .submenu__link {
+    padding: 10px 5px 10px 15px;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:after {
+      content: none;
+    }
+  }
+
+  /*.active {
+    & > .submenu__link {
+      &:hover {
+        background-color: $blue;
+      }
+    }
+  }*/
+}

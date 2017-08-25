@@ -12,14 +12,15 @@ header.shell-full.section-bgcolor--black
         ul.main-menu
           li.main-menu__item.menu__item.parent
             a.main-menu__link.text-uppercase(href="#") HOME
-              i.fa.fa-chevron-down.text-right.menu__toggle(aria-hidden="true")
+              span.text-right.menu__toggle
+              //i.fa.fa-chevron-down.text-right.menu__toggle(aria-hidden="true")
             ul.submenu.submenu--level1.text-uppercase.section-color--black
               each val in ['history', 'offers']
                 li.menu__item.submenu__item
                   a.submenu__link(href="#")= val
               li.menu__item.submenu__item.parent
                 a.submenu__link(href="#") News
-                  i.fa.fa-chevron-right.text-right.menu__toggle(aria-hidden="true")
+                  span.text-right.menu__toggle
                 ul.submenu.submenu--next-level.text-uppercase.section-color--black
                   each val in ['Fresh', 'New', '404 page']
                     li.menu__item.submenu__item

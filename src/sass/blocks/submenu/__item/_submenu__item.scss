@@ -8,3 +8,20 @@
   border-left: 7px solid $blue;
   border-right: 7px solid $blue;
 }
+
+@include mq(991px) {
+  .submenu__item {
+    border: none;
+    padding: 0;
+    line-height: 1;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+
+    .active {
+      background-color: $blue;
+    }
+  }
+}

@@ -39,8 +39,10 @@
     display: block;
     visibility: visible;
     position: relative;
+    width: 100%;
     top: 0;
     padding: 0;
+    text-align: left;
 
     &--level1 {
       /*top: 120px;*/

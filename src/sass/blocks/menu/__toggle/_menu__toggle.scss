@@ -1,8 +1,30 @@
+.menu__toggle {
+  &:after {
+    right: 15px;
+    content: "\f054";
+    font-family: FontAwesome;
+    color: $white;
+    position: absolute;
+  }
+}
+
 @include mq(991px) {
   .menu__toggle {
     position: absolute;
     right: 5px;
     transition: transform .3s ease;
+    width: 15px;
+    height: 20px;
+    font-size: 1rem;
+
+    
+    &:after {
+      right: 0;
+      content: "\f078";
+      //font-family: FontAwesome;
+      //color: $white;
+      //position: absolute;
+    }
 
     &--open {
       transform: rotate(180deg);

@@ -36,6 +36,7 @@ function adjustMenu() {
         }
     });
   } else {
+    hideMenuOnScroll();
     showMenu();
     toggleMobileMenu();
   }
@@ -56,5 +57,12 @@ function toggleMobileMenu() {
     if(e.target.classList.contains('menu__toggle')) {
       e.target.classList.toggle('menu__toggle--open');
     }
+  });
+}
+
+function hideMenuOnScroll() {
+  window.addEventListener('scroll', function() {
+    document.querySelector('.main-menu').classList.remove('main-menu--show');
+    document.querySelector('.nav__toggle').classList.remove('nav--open');
   });
 }
