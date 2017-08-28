@@ -56,6 +56,11 @@ function toggleMobileMenu() {
   mainMenu.addEventListener('click', function(e) {
     if(e.target.classList.contains('menu__toggle')) {
       e.target.classList.toggle('menu__toggle--open');
+      if(e.target.classList.contains('menu__toggle--open')) {
+        e.target.parentNode.nextElementSibling.style.display = 'block';
+      } else {
+        e.target.parentNode.nextElementSibling.style.display = 'none';
+      }
     }
   });
 }
