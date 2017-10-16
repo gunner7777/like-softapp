@@ -2,3 +2,9 @@
   display: block;
   //line-height: 4rem;
 }
+
+@include mq(480px) {
+  .brand__link {
+    margin-left: 20px;
+  }
+}

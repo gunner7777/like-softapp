@@ -3,13 +3,15 @@
   /*margin: 0 10px;*/
   width: 240px;
   /*background-color: $black;*/
-  -webkit-transition: padding .3s ease;
-  -o-transition: padding .3s ease;
-  transition: padding .3s ease;
+  
   display: none;
   visibility: hidden;
+  opacity: 0;
   /*padding: 80px 10px 0;*/
   padding: 80px 0 0;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 
   &--level1 {
     /*top: 120px;*/
@@ -27,10 +29,10 @@
   }
 
   &--show {
-    /*padding: 30px 10px 0;*/
     padding: 30px 0 0;
     display: block;
     visibility: visible;
+    opacity: 1;
   }
 }
 

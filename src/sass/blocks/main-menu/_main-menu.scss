@@ -7,25 +7,27 @@
     top: 48px;
     background-color: $black;
     z-index: 500;
-    -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
     height: calc( 100vh - 50px );
-    -webkit-transition: -webkit-transform .3s ease;
-    transition: -webkit-transform .3s ease;
-    -o-transition: transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
+    transition: transform .5s ease;
 
 
 
     &--show {
       display: list-item;
       border-right: 1px solid $black;
-      -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-              transform: translateX(0);
+      -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+              transform: translate(0, 0);
     }
+  }
+}
+
+@include mq(300px) {
+  .main-menu {
+    width: 200px;
   }
 }
 

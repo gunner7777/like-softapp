@@ -7,3 +7,9 @@
     font-size: 2.1rem;
   }
 }
+
+@include mq(480px) {
+  .brand__title {
+    font-size: 1.7rem;
+  }
+}
